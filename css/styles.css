@@ -32,7 +32,7 @@ li {
 }
 
 .list{
-list-style: none
+list-style: none;
 }
 
 .address-list {
@@ -68,7 +68,7 @@ color: var(--color-ocean);
         color: var(--color-iris);
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
+        
 }
 
 .logo-span {
@@ -104,6 +104,10 @@ color: var(--color-ocean);
     background-color: var(--color-iris);
     color: var(--color-white);
     letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+    border: 0;
+    border-radius: 4px;
 }
 
 .button:hover,
@@ -134,8 +138,18 @@ color: var(--color-ocean);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-grey);
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
+}
+
+.list-item-team {
+        font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: var(--color-grey);
+            text-align: center;
+            text-transform: capitalize;
 }
 
 .list-text {
@@ -166,6 +180,7 @@ color: var(--color-ocean);
 
 .section-title {
     background-color: var(--color-grey);
+    
 }
 
 .section-list {
@@ -191,3 +206,73 @@ background-color: var(--color-cloud);
     color: var(--color-cloud);
 }
 
+/* ========================== Header ========================== */
+a {
+    text-decoration: none;}
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;}
+
+.container{
+    display: flex;
+    max-width: 1156px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 24px 15px;
+}
+
+/* навігація */
+.header-nav{
+    align-items: center;
+    display: flex;
+}
+
+/* всі списки li */
+.header-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+/* email telefon */
+.header-list-address{
+    display: flex;
+    align-items: center;
+    gap: 40px;}
+/*=================================== TITLE BUTTON ===========================*/
+/*секція*/
+.main-title{
+    display: block;
+    padding: 188px 472px;}
+/*заголовок*/
+.title-text{
+    max-width: 496px;
+    max-height: 120px;
+    margin: 0 auto;}
+/*кнопка*/
+.main-button{
+    display: block;
+    max-width: 169px;
+    max-height: 56px;
+   margin: 0 auto;
+   padding-top: 48px;}
+/* ============================== Main text content ===============================*/
+/* секція */
+.text-section{
+width: 1156px;
+height: 104px;
+margin: 0 auto;
+padding: 120px 0;
+}
+/* Батьківський бокс ul */
+.text-list-parent{
+display: flex;
+gap: 24px;
+}
+/* Дочірний бокс li */
+.text-lis-item {
+flex-basis: calc((100% - 72px)/4);
+}
+/* =============================== Main img conten 1 ===================================== */
+
+/* =======================================  ============================================= */
