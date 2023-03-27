@@ -27,6 +27,33 @@ button {
     --color-white: #ffffff;
     --color-dairy: #fcfcfc;
 }
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 200%;
+    height: auto;
+}
 
 li {
     list-style-type: none;
@@ -51,6 +78,9 @@ list-style: none;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--color-navy-blue);
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 .nav-link:hover {
@@ -66,14 +96,15 @@ color: var(--color-ocean);
 }
 
 .header-link {
-    font-family: "Raleway", sans-serif;
+        font-family: "Raleway", sans-serif;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
         color: var(--color-iris);
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        
+        display: inline-block;
+        text-align: center;
 }
 
 .logo-span {
@@ -145,6 +176,7 @@ color: var(--color-ocean);
     color: var(--color-grey);
     text-align: left;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 .list-item {
@@ -153,8 +185,8 @@ color: var(--color-ocean);
             line-height: 1.2;
             letter-spacing: 0.02em;
             color: var(--color-grey);
-            text-align: center;
             text-transform: capitalize;
+            margin-bottom: 8px;
 }
 
 .list-text {
@@ -208,13 +240,6 @@ background-color: var(--color-cloud);
 }
 
 /* ========================== Header ========================== */
-a {
-    text-decoration: none;}
-ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;}
-
 .container{
         width: 1158px;
         padding-left: 15px;
@@ -245,8 +270,7 @@ ul {
     display: flex;
     gap: 40px;
     margin-left: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
 }
 /* email telefon */
 .header-list-address{
@@ -284,6 +308,29 @@ justify-content: center;
     border-radius: 4px;
 }
 /* ============================== Main text content ===============================*/
+.title-none{
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.Features {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* секція */
 .text-section{
     padding-top: 120px;
@@ -297,7 +344,7 @@ justify-content: center;
 }
 /* Дочірний бокс li */
 .main-item {
-    flex-basis: calc((100% - 24px)/4);
+    flex-basis: calc((100% - 72px)/4);
 }
 /* =============================== section-appearance ===================================== */
 .section-appearance{
@@ -322,7 +369,6 @@ padding-top: 120px;
 }
 .team-name{
 margin-bottom: 72px;
-margin: 0 auto;
 }
 .team-list{
     display: flex;
@@ -382,11 +428,9 @@ border-radius: 0px 0px 4px 4px;}
 .filtres-items{
     flex-grow: 1;
     padding-top: 32px;
-    padding-right: auto;
+    padding: 32px 16px;
     padding-bottom: 32px;
-    padding-left: 16px;
-    border-right: 1px solid var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-    border: 1px solid var(--color-cornflower);
+    border-right: 1px solid var(--color-cornflower);
+    border-bottom: 1px solid var(--color-cornflower);
+    border-left: 1px solid var(--color-cornflower);
 }
